@@ -115,9 +115,10 @@ export default {
     display: inline-block;
     margin-bottom: 10px;
 
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #6d7885;
 
     .required {
       color: #ff0013;
@@ -127,23 +128,33 @@ export default {
   .input-wrapper-outer {
     display: flex;
     // width: max-content;
-    padding: 0 20px 0 50px;
     width: 100%;
+    background: #f2f3f5;
+    border: 1px solid #d5d6d8;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 20px;
 
     .input-wrapper-inner {
       display: flex;
       width: 100%;
+      background: inherit;
 
       input {
+        background: inherit;
         width: 100%;
         padding: 10px;
-        font-size: 15px;
-        line-height: 17px;
+        font-size: 18px;
+        line-height: 20px;
         border: none;
 
         &:focus,
         &:active {
           outline: none;
+        }
+
+        &::placeholder {
+          color: #afb5bd;
         }
       }
     }

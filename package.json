@@ -1,9 +1,9 @@
 {
-  "name": "ai_stud",
+  "name": "Helpem",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname 192.168.1.68",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -14,7 +14,8 @@
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/svg-sprite": "^0.4.10",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "vue-custom-scrollbar": "^1.4.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

@@ -1,8 +1,8 @@
 <template lang="pug">
-  .home-page  
-    PageHeader(hideBackBtn)
+  .profile-page  
+    PageHeader
       template(v-slot:page-header)
-        .page-header-title Авторизация
+        .page-header-title Профиль
 
 </template>
 
@@ -10,17 +10,13 @@
 import PageHeader from '~/components/PageHeader'
 export default {
   components: { PageHeader },
-  middleware: ({ redirect }) => {
-    redirect('/tasks')
-  },
 }
 </script>
 
 <style lang="scss">
-.home-page {
+.profile-page {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 </style>

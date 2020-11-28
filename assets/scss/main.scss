@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  max-width: 100%;
+  min-height: calc(100vh - 100px);
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   // overflow-x: hidden;
@@ -87,9 +87,10 @@ svg {
   opacity: 0;
 }
 
-.title {
-  font-weight: 800;
-  font-size: 80px;
-  line-height: 109px;
-  color: #fff;
+.page-header-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #000000;
 }

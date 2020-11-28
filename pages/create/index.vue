@@ -1,9 +1,5 @@
 <template lang="pug">
-  .home-page  
-    PageHeader(hideBackBtn)
-      template(v-slot:page-header)
-        .page-header-title Авторизация
-
+  div
 </template>
 
 <script>
@@ -11,7 +7,7 @@ import PageHeader from '~/components/PageHeader'
 export default {
   components: { PageHeader },
   middleware: ({ redirect }) => {
-    redirect('/tasks')
+    redirect('/chats')
   },
 }
 </script>
